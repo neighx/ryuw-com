@@ -11,9 +11,9 @@ const categories: WorkCategory[] = [
   "All",
   "Artist",
   "Production",
-  "Vocal Mix",
+  "Remix",
   "Brand / Film",
-  "Demo",
+  "Game / Anime",
 ];
 
 export default function WorkPage() {

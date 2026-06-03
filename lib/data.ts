@@ -1,25 +1,47 @@
-import type { Work, Service, SoundPalette, NavLink } from "@/types/site";
+import type { Work, NavLink } from "@/types/site";
 
 export const navLinks: NavLink[] = [
   { label: "Works", href: "/work" },
-  { label: "Services", href: "/services" },
-  { label: "Sound", href: "/#sound" },
-  { label: "About", href: "/#about" },
-  { label: "EPK", href: "/epk" },
+  { label: "Bio / EPK", href: "/epk" },
   { label: "Contact", href: "/contact" },
 ];
 
 export const works: Work[] = [
   {
     id: "foodman-246",
-    title: "FOODMAN x Ryuw — 246",
-    year: 2024,
-    role: "Producer / Artist",
+    title: "FOODMAN - 246 feat. Ryuw",
+    year: 2019,
+    role: "Producer / Artist / Composer",
     category: "Artist",
-    style: ["Experimental", "Electronic", "Bass"],
+    style: ["Electronic", "Bass Music"],
     description:
-      "Collaborative release with FOODMAN, blending experimental electronics and Tokyo street energy.",
+      'In 2019, he released the collaboration track "246" with Foodman from Diplo\'s label MAD DECENT, entering the playlist of Best Electronic music selected by Resident Advisor magazine.',
+    descriptionJa:
+      "2019年、Diplo率いるレーベルMAD DECENTから食品まつり a.k.a foodmanのコラボ曲「246」をリリース。Resident Advisor誌が選ぶBEST Electronic musicのプレイリストに選出。",
     note: "Released via Mad Decent",
+    reviewQuote:
+      '"Only \'246,\' a collaboration with the Tokyo producer Ryuw, sounds like it belongs on Mad Decent. It\'s loaded with the kind of exaggerated sounds you hear in big-room trap, but, alongside roaring lions and electric guitars, \'246\' resembles an EDM banger."',
+    reviewSource: "Resident Advisor",
+    reviewLink: "https://ja.ra.co/reviews/23635",
+    listenLink: "https://soundcloud.com/maddecent/sets/foodman-odoodo",
+    featured: true,
+  },
+  {
+    id: "dct-saa-kane",
+    title: "DREAMS COME TRUE - さあ鐘を鳴らせ (YO-SIN & Ryuw REMIX)",
+    year: 2020,
+    role: "Producer / Remixer",
+    category: "Remix",
+    style: ["Electronic", "Bass"],
+    description:
+      'He has worked on a bass music remix for DREAMS COME TRUE, one of Japan\'s most respected music acts, collaborating with YO-SIN on "Saa Kane wo Narase (YO-SIN & Ryuw REMIX)."',
+    descriptionJa:
+      "DREAMS COME TRUEの「さあ鐘を鳴らせ」を、YO-SINとの共作によりベースミュージック・リミックスとして手掛けました。",
+    note: "Produced by YO-SIN × Ryuw / Piano: Miyuki Ito",
+    reviewSource: "BARKS",
+    reviewLink: "https://barks.jp/news/892815/",
+    listenLink:
+      "https://store.universal-music.co.jp/products/umck1674",
     featured: true,
   },
   {
@@ -34,11 +56,11 @@ export const works: Work[] = [
     featured: true,
   },
   {
-    id: "dark-rnb-vocal-demo",
-    title: "Dark R&B Vocal Demo",
+    id: "dark-rnb-demo",
+    title: "Dark R&B Demo",
     year: 2024,
     role: "Producer / Composer",
-    category: "Demo",
+    category: "Production",
     style: ["R&B", "Hip Hop", "Electronic"],
     description:
       "Custom production demo for artists and vocalists seeking dark, emotional R&B sound.",
@@ -46,44 +68,24 @@ export const works: Work[] = [
   },
   {
     id: "tokyo-night-beat-pack",
-    title: "Tokyo Night Beat Pack Demo",
+    title: "Tokyo Night Beat Pack",
     year: 2024,
     role: "Producer",
-    category: "Demo",
+    category: "Production",
     style: ["Hip Hop", "Electronic", "Trap"],
     description:
       "A pack of original beats capturing the neon-lit atmosphere of Tokyo at night.",
   },
   {
     id: "fashion-campaign-sound",
-    title: "Fashion Campaign Sound Sketch",
+    title: "Fashion Campaign Sound",
     year: 2024,
     role: "Sound Director / Composer",
     category: "Brand / Film",
     style: ["Cinematic", "Fashion", "Electronic"],
     description:
-      "Original music sketch for a fashion brand campaign, minimal and visually driven.",
+      "Original music for a fashion brand campaign, minimal and visually driven.",
     featured: true,
-  },
-  {
-    id: "vocal-mix-before-after",
-    title: "Vocal Mix Before / After",
-    year: 2024,
-    role: "Vocal Mix Engineer",
-    category: "Vocal Mix",
-    style: ["R&B", "Pop", "Electronic"],
-    description:
-      "Vocal mix demonstration showcasing modern processing for R&B and electronic records.",
-  },
-  {
-    id: "bass-music-club-demo",
-    title: "Bass Music Club Demo",
-    year: 2024,
-    role: "Producer / Sound Designer",
-    category: "Demo",
-    style: ["Bass Music", "Electronic", "Club"],
-    description:
-      "Heavy low-end, distorted energy, and forward-thinking club sound design.",
   },
   {
     id: "cinematic-brand-intro",
@@ -98,125 +100,3 @@ export const works: Work[] = [
 ];
 
 export const featuredWorks = works.filter((w) => w.featured);
-
-export const services: Service[] = [
-  {
-    id: "music-production",
-    title: "Music Production",
-    price: "From ¥80,000",
-    description:
-      "Custom tracks, full song production, arrangement, and production direction for artists.",
-    items: [
-      "Custom beat production",
-      "Full song arrangement",
-      "Artist direction",
-      "Reference-based production",
-      "Stems delivery",
-    ],
-  },
-  {
-    id: "full-song-production",
-    title: "Full Song Production",
-    price: "From ¥200,000",
-    description:
-      "End-to-end song creation from composition to final direction.",
-    items: [
-      "Composition",
-      "Arrangement",
-      "Production",
-      "Vocal direction",
-      "Recording support",
-      "Mix direction",
-    ],
-  },
-  {
-    id: "vocal-mix",
-    title: "Vocal Mix",
-    price: "From ¥30,000",
-    description:
-      "Modern vocal mixing for R&B, Hip Hop, Electronic, and Pop records.",
-    items: [
-      "Lead vocal mix",
-      "Doubles and adlibs",
-      "Reverb / delay design",
-      "Pitch correction direction",
-      "Rough mastering",
-    ],
-  },
-  {
-    id: "sound-design-film-brand",
-    title: "Sound Design for Film / Brand",
-    price: "From ¥300,000",
-    description:
-      "Original music and sound design for film, fashion, advertising, and visual projects.",
-    items: [
-      "Original music for visuals",
-      "Fashion / campaign sound",
-      "Intro / outro sound logo",
-      "Cinematic textures",
-      "Commercial-use delivery",
-    ],
-  },
-  {
-    id: "tokyo-studio-session",
-    title: "Tokyo Studio Session",
-    price: "From ¥8,000",
-    description:
-      "Private recording and production sessions at Wuloong Studio Tokyo.",
-    items: [
-      "Private recording session",
-      "Vocal recording",
-      "Direction support",
-      "Wuloong Studio Tokyo",
-    ],
-  },
-  {
-    id: "release-creative-direction",
-    title: "Release Creative Direction",
-    price: "From ¥50,000",
-    description:
-      "Release concept, artist positioning, pitch text, EPK, and international presentation.",
-    items: [
-      "Artist bio",
-      "Press kit",
-      "Spotify pitch text",
-      "Release concept",
-      "SNS rollout plan",
-    ],
-  },
-];
-
-export const soundPalettes: SoundPalette[] = [
-  {
-    id: "dark-rnb",
-    title: "Dark R&B",
-    description:
-      "Emotional vocals, late-night atmosphere, warm low-end, wide space.",
-    tags: ["R&B", "Emotional", "Vocals", "Late Night"],
-    gradient: "from-purple-900/20 to-transparent",
-  },
-  {
-    id: "tokyo-night-electronic",
-    title: "Tokyo Night Electronic",
-    description:
-      "Neon textures, cinematic synths, urban melancholy, futuristic drums.",
-    tags: ["Electronic", "Cinematic", "Tokyo", "Nightlife"],
-    gradient: "from-blue-900/20 to-transparent",
-  },
-  {
-    id: "bass-club-experimental",
-    title: "Bass / Club / Experimental",
-    description:
-      "Heavy low-end, distorted energy, club impact, forward-thinking sound design.",
-    tags: ["Bass", "Club", "Experimental", "Sound Design"],
-    gradient: "from-red-900/20 to-transparent",
-  },
-  {
-    id: "street-fashion-luxury",
-    title: "Street / Fashion / Luxury",
-    description:
-      "Minimal, stylish, visual-driven music for campaigns, fashion, and culture.",
-    tags: ["Fashion", "Film", "Luxury", "Minimal"],
-    gradient: "from-gray-800/30 to-transparent",
-  },
-];

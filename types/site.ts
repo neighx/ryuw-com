@@ -2,9 +2,9 @@ export type WorkCategory =
   | "All"
   | "Artist"
   | "Production"
-  | "Vocal Mix"
+  | "Remix"
   | "Brand / Film"
-  | "Demo";
+  | "Game / Anime";
 
 export interface Work {
   id: string;
@@ -14,7 +14,12 @@ export interface Work {
   category: WorkCategory;
   style: string[];
   description: string;
+  descriptionJa?: string;
   note?: string;
+  reviewQuote?: string;
+  reviewSource?: string;
+  reviewLink?: string;
+  listenLink?: string;
   featured?: boolean;
 }
 
