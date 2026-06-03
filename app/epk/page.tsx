@@ -30,10 +30,10 @@ const credits = [
 ];
 
 const links = [
-  { label: "Spotify", href: "#" },
-  { label: "Apple Music", href: "#" },
-  { label: "Instagram", href: "#" },
-  { label: "YouTube", href: "#" },
+  { label: "Spotify", href: "https://open.spotify.com/intl-ja/artist/08lMI3IEUcqQ8sbuaReqKc" },
+  { label: "Apple Music", href: "https://music.apple.com/jp/artist/ryuw/1453891316" },
+  { label: "Instagram", href: "https://www.instagram.com/ryuw_ryuw_/" },
+  { label: "SoundCloud", href: "https://soundcloud.com/ryuw_prpr" },
 ];
 
 export default function EPKPage() {

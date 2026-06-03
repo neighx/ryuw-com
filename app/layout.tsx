@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     title: "RYUW | Tokyo-based Producer / Artist / Sound Director",
     description:
       "Dark, emotional, and futuristic sound for artists, brands, film, and nightlife.",
-    url: "https://ryuw.com",
+    url: "https://ryuw-com.vercel.app",
     siteName: "RYUW",
     locale: "en_US",
     type: "website",

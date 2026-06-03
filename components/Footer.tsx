@@ -1,11 +1,10 @@
 import Link from "next/link";
 
 const socialLinks = [
-  { label: "Instagram", href: "#" },
-  { label: "Spotify", href: "#" },
-  { label: "Apple Music", href: "#" },
-  { label: "YouTube", href: "#" },
-  { label: "SoundCloud", href: "#" },
+  { label: "Instagram", href: "https://www.instagram.com/ryuw_ryuw_/" },
+  { label: "Spotify", href: "https://open.spotify.com/intl-ja/artist/08lMI3IEUcqQ8sbuaReqKc" },
+  { label: "Apple Music", href: "https://music.apple.com/jp/artist/ryuw/1453891316" },
+  { label: "SoundCloud", href: "https://soundcloud.com/ryuw_prpr" },
   { label: "Contact", href: "/contact" },
 ];
 
