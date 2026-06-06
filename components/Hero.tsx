@@ -155,7 +155,7 @@ export default function Hero() {
                 className="flex items-center gap-2 px-6 py-3 border border-white/20 text-white text-xs tracking-[0.2em] uppercase hover:border-white/50 hover:bg-white/5 transition-all duration-300"
               >
                 <Play size={10} className="fill-white" />
-                View Works
+                View Music
               </Link>
             </div>
           </FadeUp>
