@@ -8,9 +8,6 @@ export default function ContactPage() {
         <h1 className="text-4xl lg:text-6xl font-bold text-white tracking-tight mb-4">
           Contact
         </h1>
-        <p className="text-[#a3a3a3] text-base leading-relaxed max-w-lg">
-          ryuw.beats@gmail.com
-        </p>
       </div>
 
       {/* Form */}

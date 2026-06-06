@@ -21,6 +21,11 @@
   --color-foreground: var(--text-primary);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-serif-jp: var(--font-noto-serif-jp);
+}
+
+.font-serif-jp {
+  font-family: var(--font-noto-serif-jp), serif;
 }
 
 html {

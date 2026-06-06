@@ -97,19 +97,19 @@ export default function EPKPage() {
           </section>
 
           {/* Biography JA */}
-          <section>
-            <p className="text-[#a3a3a3] text-[10px] tracking-[0.3em] uppercase mb-6 pb-4 border-b border-white/5">
+          <section className="font-serif-jp">
+            <p className="text-[#a3a3a3] text-[10px] tracking-[0.3em] uppercase mb-6 pb-4 border-b border-white/5" style={{fontFamily: 'inherit'}}>
               プロフィール
             </p>
-            <div className="space-y-4">
-              <p className="text-[#d6d6d6] text-sm leading-relaxed">
+            <div className="space-y-5">
+              <p className="text-[#d6d6d6] text-base leading-[2]">
                 東京生まれ。Trap、HipHop、Electronic、Bass Musicを軸に活動するDJ / PRODUCER。<br />
                 PROPERPEDIGREE / YENTOWN 所属。
               </p>
-              <p className="text-[#a3a3a3] text-sm leading-relaxed">
+              <p className="text-[#a3a3a3] text-sm leading-[2]">
                 ベースミュージックに重きをおいたダークでも華やかなエレクトニックなダンス・トラックやモダンなHIPHOP,R&Bチューンを得意とするRyuwは、2012年よりキャリアをスタート。
               </p>
-              <p className="text-[#a3a3a3] text-sm leading-relaxed">
+              <p className="text-[#a3a3a3] text-sm leading-[2]">
                 2019年、Diplo率いるレーベルMAD DECENTから食品まつり a.k.a foodmanのコラボ曲&ldquo;246&rdquo;をリリースしResident Advisor誌が選ぶBEST Electronic musicのプレイリストに入るなど実力派ベースミュージックプロデューサー。
               </p>
             </div>
