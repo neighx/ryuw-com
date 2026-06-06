@@ -16,7 +16,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <p className="text-white font-bold tracking-[0.35em] text-base mb-3">
-              RYUW
+              Ryuw
             </p>
             <p className="text-[#a3a3a3] text-xs tracking-widest uppercase">
               Tokyo-based Producer / Artist / Sound Director
@@ -58,7 +58,7 @@ export default function Footer() {
 
         <div className="mt-16 pt-8 border-t border-white/5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <p className="text-[#a3a3a3] text-xs">
-            © 2026 RYUW. All rights reserved.
+            © 2026 Ryuw. All rights reserved.
           </p>
           <p className="text-[#a3a3a3]/40 text-[10px] tracking-widest uppercase">
             Tokyo

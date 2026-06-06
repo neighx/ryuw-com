@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "RYUW | Tokyo-based Producer / Artist / Sound Director",
+  title: "Ryuw | Tokyo-based Producer / Artist / Sound Director",
   description:
     "Official website of Ryuw, a Tokyo-based producer, artist, and sound director creating dark, emotional, and futuristic music for artists, brands, film, and nightlife.",
   keywords: [
@@ -31,17 +31,17 @@ export const metadata: Metadata = {
     "Wuloong Studio",
   ],
   openGraph: {
-    title: "RYUW | Tokyo-based Producer / Artist / Sound Director",
+    title: "Ryuw | Tokyo-based Producer / Artist / Sound Director",
     description:
       "Dark, emotional, and futuristic sound for artists, brands, film, and nightlife.",
     url: "https://ryuw-com.vercel.app",
-    siteName: "RYUW",
+    siteName: "Ryuw",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "RYUW | Tokyo-based Producer / Artist / Sound Director",
+    title: "Ryuw | Tokyo-based Producer / Artist / Sound Director",
     description:
       "Dark, emotional, and futuristic sound for artists, brands, film, and nightlife.",
   },

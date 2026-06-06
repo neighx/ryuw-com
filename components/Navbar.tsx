@@ -31,7 +31,7 @@ export default function Navbar() {
           href="/"
           className="text-white font-bold tracking-[0.3em] text-sm lg:text-base hover:text-white/70 transition-colors"
         >
-          RYUW
+          Ryuw
         </Link>
 
         {/* Desktop links */}

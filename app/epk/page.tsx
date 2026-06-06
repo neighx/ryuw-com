@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, ExternalLink } from "lucide-react";
 
@@ -40,16 +41,31 @@ export default function EPKPage() {
   return (
     <div className="min-h-screen pt-32 pb-28 lg:pt-40 lg:pb-40 px-6 lg:px-8 max-w-6xl mx-auto">
       {/* Header */}
-      <div className="mb-24">
-        <p className="text-[#a3a3a3] text-[10px] tracking-[0.4em] uppercase mb-6">
-          Electronic Press Kit
-        </p>
-        <h1 className="text-5xl lg:text-8xl font-bold text-white tracking-tight mb-4">
-          RYUW
-        </h1>
-        <p className="text-[#a3a3a3] text-sm lg:text-base tracking-[0.15em] uppercase">
-          Tokyo-based Producer / Artist / Sound Director
-        </p>
+      <div className="mb-24 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-end">
+        <div>
+          <p className="text-[#a3a3a3] text-[10px] tracking-[0.4em] uppercase mb-6">
+            Electronic Press Kit
+          </p>
+          <h1 className="text-5xl lg:text-8xl font-bold text-white tracking-tight mb-4">
+            Ryuw
+          </h1>
+          <p className="text-[#a3a3a3] text-sm lg:text-base tracking-[0.15em] uppercase">
+            Tokyo-based Producer / Artist / Sound Director
+          </p>
+        </div>
+
+        {/* Portrait */}
+        <div className="relative w-full aspect-[3/4] max-w-xs lg:max-w-none overflow-hidden">
+          <Image
+            src="/ryuw-photo.jpg"
+            alt="Ryuw"
+            fill
+            priority
+            className="object-cover object-top"
+            sizes="(max-width: 1024px) 300px, 40vw"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#050505]/60 via-transparent to-transparent" />
+        </div>
       </div>
 
       {/* Grid layout */}
