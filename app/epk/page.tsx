@@ -107,10 +107,10 @@ export default function EPKPage() {
                 PROPERPEDIGREE / YENTOWN 所属。
               </p>
               <p className="text-[#a3a3a3] text-sm leading-relaxed">
-                ベースミュージックに重きをおいたダークでも華やかなエレクトロニックなダンス・トラックやモダンなHIPHOP、R&BチューンをRyuwは、2012年よりキャリアをスタート。
+                ベースミュージックに重きをおいたダークでも華やかなエレクトニックなダンス・トラックやモダンなHIPHOP,R&BチューンをRyuwは、2012年よりキャリアをスタート。
               </p>
               <p className="text-[#a3a3a3] text-sm leading-relaxed">
-                2019年、Diplo率いるレーベルMAD DECENTから食品まつり a.k.a foodmanのコラボ曲「246」をリリースし、Resident Advisor誌が選ぶBEST Electronic musicのプレイリストに入るなど実力派ベースミュージックプロデューサー。
+                2019年、Diplo率いるレーベルMAD DECENTから食品まつり a.k.a foodmanのコラボ曲&ldquo;246&rdquo;をリリースしResident Advisor誌が選ぶBEST Electronic musicのプレイリストに入るなど実力派ベースミュージックプロデューサー。
               </p>
             </div>
           </section>
