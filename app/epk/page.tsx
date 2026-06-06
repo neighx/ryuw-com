@@ -72,37 +72,47 @@ export default function EPKPage() {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-20">
         {/* Main content */}
         <div className="lg:col-span-2 space-y-16">
-          {/* Short Bio */}
-          <section>
-            <p className="text-[#a3a3a3] text-[10px] tracking-[0.3em] uppercase mb-6 pb-4 border-b border-white/5">
-              Short Bio
-            </p>
-            <p className="text-[#d6d6d6] text-base leading-relaxed">
-              Ryuw is a Tokyo-based producer, artist, and sound director
-              creating dark, emotional, and futuristic music across hip-hop,
-              R&B, electronic, and bass music.
-            </p>
-          </section>
-
-          {/* Long Bio */}
+          {/* Biography EN */}
           <section>
             <p className="text-[#a3a3a3] text-[10px] tracking-[0.3em] uppercase mb-6 pb-4 border-b border-white/5">
               Biography
             </p>
-            <p className="text-[#a3a3a3] text-sm leading-relaxed">
-              Ryuw blends Tokyo street culture, late-night R&B, electronic
-              textures, and bass-heavy club energy into a distinctive sound. As
-              an artist and producer, he creates music for vocalists, rappers,
-              visual projects, brands, and nightlife.
+            <div className="space-y-4">
+              <p className="text-[#d6d6d6] text-base leading-relaxed">
+                Ryuw, a Tokyo-born DJ/producer specializing in dark but brilliant
+                electronic music, as well as modern HIPHOP R&B tune with an
+                emphasis on bass music. He started his music career in 2012.
+              </p>
+              <p className="text-[#a3a3a3] text-sm leading-relaxed">
+                In 2019, he released the collaboration track &ldquo;246&rdquo; with
+                Foodman from Diplo&apos;s label MAD DECENT, and gradually attracted
+                attention such as entering the playlist of Best Electronic music
+                selected by Resident Advisor magazine and more.
+              </p>
+              <p className="text-[#a3a3a3] text-sm leading-relaxed">
+                He is also a member of japanese HIPHOP Creative collective
+                PROPERPEDIGREE, as well as YENTOWN.
+              </p>
+            </div>
+          </section>
+
+          {/* Biography JA */}
+          <section>
+            <p className="text-[#a3a3a3] text-[10px] tracking-[0.3em] uppercase mb-6 pb-4 border-b border-white/5">
+              プロフィール
             </p>
-            <p className="text-[#a3a3a3] text-sm leading-relaxed mt-4">
-              With roots in Tokyo&apos;s underground music scene, Ryuw has
-              developed a signature sound that moves between dark emotional R&B,
-              futuristic electronic production, and forward-thinking club
-              energy. His work spans original releases, brand campaigns, film
-              sound, and artist production — always pushing the boundary between
-              music and culture.
-            </p>
+            <div className="space-y-4">
+              <p className="text-[#d6d6d6] text-sm leading-relaxed">
+                東京生まれ。Trap、HipHop、Electronic、Bass Musicを軸に活動するDJ / PRODUCER。<br />
+                PROPERPEDIGREE / YENTOWN 所属。
+              </p>
+              <p className="text-[#a3a3a3] text-sm leading-relaxed">
+                ベースミュージックに重きをおいたダークでも華やかなエレクトロニックなダンス・トラックやモダンなHIPHOP、R&BチューンをRyuwは、2012年よりキャリアをスタート。
+              </p>
+              <p className="text-[#a3a3a3] text-sm leading-relaxed">
+                2019年、Diplo率いるレーベルMAD DECENTから食品まつり a.k.a foodmanのコラボ曲「246」をリリースし、Resident Advisor誌が選ぶBEST Electronic musicのプレイリストに入るなど実力派ベースミュージックプロデューサー。
+              </p>
+            </div>
           </section>
 
           {/* Credits */}
