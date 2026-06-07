@@ -86,12 +86,12 @@ export default function Hero() {
       {/* Gradient canvas */}
       <canvas ref={canvasRef} className="absolute inset-0 w-full h-full" />
 
-      {/* Photo — right side */}
+      {/* Photo — right side (mobile: top-right corner, desktop: right half) */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1.4, delay: 0.2, ease }}
-        className="absolute right-0 top-0 h-full w-[55%] lg:w-[48%] pointer-events-none"
+        className="absolute right-0 top-0 h-full w-[50%] lg:w-[48%] pointer-events-none"
       >
         <Image
           src="/ryuw-photo.jpg"
@@ -99,33 +99,33 @@ export default function Hero() {
           fill
           priority
           className="object-cover object-center"
-          sizes="(max-width: 1024px) 55vw, 48vw"
+          sizes="(max-width: 1024px) 50vw, 48vw"
         />
         {/* Fade: left edge into background */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#050505] via-[#050505]/40 to-transparent" />
-        {/* Fade: bottom */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#050505] via-[#050505]/50 to-transparent" />
+        {/* Fade: bottom — stronger on mobile */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/30 to-transparent" />
         {/* Fade: top */}
         <div className="absolute inset-0 bg-gradient-to-b from-[#050505]/60 via-transparent to-transparent" />
       </motion.div>
 
-      {/* Content — left side */}
-      <div className="relative z-10 w-full px-6 lg:px-16 xl:px-24 max-w-7xl mx-auto">
-        <div className="max-w-xl">
+      {/* Content — left side, anchored to bottom-left on mobile */}
+      <div className="relative z-10 w-full px-6 lg:px-16 xl:px-24 max-w-7xl mx-auto flex items-end lg:items-center pb-24 lg:pb-0 min-h-screen">
+        <div className="max-w-[52%] lg:max-w-xl">
           <FadeUp delay={0.1}>
-            <p className="text-[#a3a3a3] text-[10px] lg:text-xs tracking-[0.4em] uppercase mb-8">
+            <p className="text-[#a3a3a3] text-[10px] lg:text-xs tracking-[0.4em] uppercase mb-6 lg:mb-8">
               Official Site
             </p>
           </FadeUp>
 
           <FadeUp delay={0.3}>
-            <h1 className="text-[clamp(4rem,12vw,10rem)] font-bold leading-none tracking-[-0.02em] text-white mb-6">
+            <h1 className="text-[clamp(3rem,10vw,10rem)] font-bold leading-none tracking-[-0.02em] text-white mb-4 lg:mb-6">
               Ryuw
             </h1>
           </FadeUp>
 
           <FadeUp delay={0.5}>
-            <p className="text-[#d6d6d6] text-xs lg:text-sm tracking-[0.2em] uppercase mb-12">
+            <p className="text-[#d6d6d6] text-[10px] lg:text-sm tracking-[0.15em] lg:tracking-[0.2em] uppercase mb-8 lg:mb-12">
               Tokyo-based Music Producer / Artist DJ
             </p>
           </FadeUp>
@@ -133,7 +133,7 @@ export default function Hero() {
           <FadeUp delay={0.7}>
             <Link
               href="/music"
-              className="inline-flex items-center gap-3 px-8 py-4 bg-white text-black text-xs tracking-[0.2em] uppercase hover:bg-white/90 transition-all duration-300 font-medium"
+              className="inline-flex items-center gap-3 px-6 lg:px-8 py-3 lg:py-4 bg-white text-black text-xs tracking-[0.2em] uppercase hover:bg-white/90 transition-all duration-300 font-medium"
             >
               <Play size={10} className="fill-black" />
               View Music

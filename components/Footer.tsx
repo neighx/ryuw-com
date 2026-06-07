@@ -19,7 +19,7 @@ export default function Footer() {
               Ryuw
             </p>
             <p className="text-[#a3a3a3] text-xs tracking-widest uppercase">
-              Tokyo-based Producer / Artist / Sound Director
+              Tokyo-based Music Producer / Artist DJ
             </p>
           </div>
 
