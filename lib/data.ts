@@ -7,13 +7,29 @@ export const navLinks: NavLink[] = [
 ];
 
 export const works: Work[] = [
+  // ── Artist: Flower が先頭 ──────────────────────────────────────
+  {
+    id: "ryuw-flower-ume",
+    title: "Ryuw - Flower feat. Ume",
+    year: 2026,
+    role: "Artist / Producer / Composer / Recording & Mastering Engineer",
+    category: "Artist",
+    style: ["R&B", "Electronic", "Bass"],
+    description:
+      '"Flower feat. Ume" is a Ryuw single that blends R&B and electronic textures with lyrics in English and Japanese. Built around the beauty of dawn and love for Japanese street culture, the track captures a quiet sense of uplift and hope.',
+    descriptionJa:
+      'Ryuwによるシングル「Flower feat. Ume」。英語と日本語が溶け合うリリック、R&Bを軸にしたメロディ、エレクトロニックな質感を組み合わせた楽曲。夜明けの美しさと日本のストリートカルチャーへの愛を重ね、静かな高揚感と希望を描いている。',
+    note: "Lyrics: Ume / Producer & Recording & Mastering Engineer: Ryuw / Vocal: Ume",
+    listenLink: "https://linkco.re/q4Rt1Cd9?lang=ja",
+  },
+
   // ── TOP バッター: YENTOWN ──────────────────────────────────────
   {
     id: "yentown-yentown",
     title: "YENTOWN - Y.E.N.T.O.W.N. feat. MonyHorse, JNKMN, PETZ, Awich & kZm",
     year: 2025,
     role: "Producer / Composer / Programming (Chaki Zulu & Ryuw)",
-    category: "Artist",
+    category: "Production",
     style: ["Hip Hop", "Electronic", "Bass"],
     description:
       'Co-produced "Y.E.N.T.O.W.N." by YENTOWN featuring MonyHorse, JNKMN, PETZ, Awich and kZm, included on YENTOWN\'s first album "Y.E.N." The track closes the album with a collective anthem that brings together the voices and identity of the crew.',
@@ -28,7 +44,7 @@ export const works: Work[] = [
     title: "YENTOWN - Dead Life feat. kZm & Awich",
     year: 2025,
     role: "Producer / Composer / Programming",
-    category: "Artist",
+    category: "Production",
     style: ["Electronic", "Hip Hop", "Bass"],
     description:
       'Produced "Dead Life" by YENTOWN featuring kZm and Awich, included on the album "Y.E.N." Built from gospel-inspired piano ideas into a fast-moving electronic hip-hop track.',
@@ -144,20 +160,6 @@ export const works: Work[] = [
     descriptionJa:
       "JNKMNの2026年アルバム『OD』に収録された「LET'S GO feat. Deech & Lunv Loyal」をプロデュース。",
     listenLink: "https://www.youtube.com/watch?v=76zj4k2OqG0",
-  },
-  {
-    id: "ryuw-flower-ume",
-    title: "Ryuw - Flower feat. Ume",
-    year: 2026,
-    role: "Artist / Producer / Composer / Recording & Mastering Engineer",
-    category: "Artist",
-    style: ["R&B", "Electronic", "Bass"],
-    description:
-      '"Flower feat. Ume" is a Ryuw single that blends R&B and electronic textures with lyrics in English and Japanese. Built around the beauty of dawn and love for Japanese street culture, the track captures a quiet sense of uplift and hope.',
-    descriptionJa:
-      'Ryuwによるシングル「Flower feat. Ume」。英語と日本語が溶け合うリリック、R&Bを軸にしたメロディ、エレクトロニックな質感を組み合わせた楽曲。夜明けの美しさと日本のストリートカルチャーへの愛を重ね、静かな高揚感と希望を描いている。',
-    note: "Lyrics: Ume / Producer & Recording & Mastering Engineer: Ryuw / Vocal: Ume",
-    listenLink: "https://linkco.re/q4Rt1Cd9?lang=ja",
   },
   {
     id: "septeni-raptures-stm",
