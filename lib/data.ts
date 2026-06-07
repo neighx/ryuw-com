@@ -106,7 +106,6 @@ export const works: Work[] = [
   },
 
   // ── 年代順 ────────────────────────────────────────────────────
-  // ── 年代順 ────────────────────────────────────────────────────
   {
     id: "change-raptures-compass",
     title: "CHANGE RAPTURES - Compass feat. Ryuw",
@@ -145,6 +144,20 @@ export const works: Work[] = [
     descriptionJa:
       "JNKMNの2026年アルバム『OD』に収録された「LET'S GO feat. Deech & Lunv Loyal」をプロデュース。",
     listenLink: "https://www.youtube.com/watch?v=76zj4k2OqG0",
+  },
+  {
+    id: "ryuw-flower-ume",
+    title: "Ryuw - Flower feat. Ume",
+    year: 2026,
+    role: "Artist / Producer / Composer / Recording & Mastering Engineer",
+    category: "Artist",
+    style: ["R&B", "Electronic", "Bass"],
+    description:
+      '"Flower feat. Ume" is a Ryuw single that blends R&B and electronic textures with lyrics in English and Japanese. Built around the beauty of dawn and love for Japanese street culture, the track captures a quiet sense of uplift and hope.',
+    descriptionJa:
+      'Ryuwによるシングル「Flower feat. Ume」。英語と日本語が溶け合うリリック、R&Bを軸にしたメロディ、エレクトロニックな質感を組み合わせた楽曲。夜明けの美しさと日本のストリートカルチャーへの愛を重ね、静かな高揚感と希望を描いている。',
+    note: "Lyrics: Ume / Producer & Recording & Mastering Engineer: Ryuw / Vocal: Ume",
+    listenLink: "https://linkco.re/q4Rt1Cd9?lang=ja",
   },
   {
     id: "septeni-raptures-stm",
@@ -200,6 +213,20 @@ export const works: Work[] = [
     listenLink: "https://linkco.re/mB3qnXeD?lang=ja",
   },
   {
+    id: "ryuw-buckmoon",
+    title: "Ryuw - BUCKMOON",
+    year: 2024,
+    role: "Artist / Composer / Producer",
+    category: "Artist",
+    style: ["Electronic", "Bass", "Dance"],
+    description:
+      '"BUCKMOON" is a Ryuw single built around a lounge-floor mood and bass music sensibility. The track reflects Ryuw\'s dark yet elegant electronic sound, with a summer-ready dance music atmosphere.',
+    descriptionJa:
+      'Ryuwによるシングル「BUCKMOON」。ラウンジフロアの空気感と、Ryuwが得意とするベースミュージックの質感を組み合わせた楽曲。夏の夜に合う、ダークでありながら華やかなエレクトロニック・ダンストラック。',
+    note: "Released 2024.7.29 / iTunes Store Dance Top Songs Japan #52",
+    listenLink: "https://linkco.re/TfadxChs?lang=ja",
+  },
+  {
     id: "sunny-only1-how-you-doing",
     title: "SUNNY ONLY 1 - How you doing",
     year: 2021,
@@ -225,6 +252,34 @@ export const works: Work[] = [
     descriptionJa:
       "ASOBISYSTEMよりリリースされたSUNNY ONLY 1の2ndシングル「Star side」をプロデュース。アフロビートやダンスホールのリズム、アコースティックギターの質感、オルタナティブR&B的なボーカルが重なるダンスチューン。",
     listenLink: "https://spincoaster.com/news/sunny-only1-release-new-single-star-side",
+  },
+  {
+    id: "ryuw-genei",
+    title: "Ryuw - 幻影",
+    year: 2021,
+    role: "Artist / Lyricist / Composer / Producer",
+    category: "Artist",
+    style: ["Electronic", "Bass", "Trap"],
+    description:
+      '"幻影" is Ryuw\'s debut single as an artist, expressing a dragon traveling through time and space with 808-driven experimental bass music. The track introduces Ryuw\'s dark, futuristic and bass-heavy electronic sound.',
+    descriptionJa:
+      'Ryuwのアーティストとしての初シングル「幻影」。808を軸に、時空を飛ぶ龍のイメージを実験的なベースミュージックとして表現した楽曲。ダークで未来的、かつベースに重きを置いたRyuwのサウンドを示す作品。',
+    note: "Released 2021.1.16 / 作詞・作曲: Ryuw",
+    listenLink: "https://linkco.re/B4paMm1s?lang=ja",
+  },
+  {
+    id: "ryuw-genei-remixes",
+    title: "Ryuw - 幻影 (Remixes)",
+    year: 2021,
+    role: "Artist / Composer",
+    category: "Remix",
+    style: ["Electronic", "Bass", "Trap"],
+    description:
+      '"幻影 (Remixes)" is a remix EP of Ryuw\'s debut single "幻影 (Phantom)," featuring remixes by WATAPACHI, 食品まつり a.k.a foodman and ATSUKI. The project expands the original track\'s futuristic Tokyo atmosphere through dark, colorful electronic and bass music interpretations.',
+    descriptionJa:
+      'Ryuw初のシングル「幻影」のリミックスEP。WATAPACHI、食品まつり a.k.a foodman、ATSUKIが参加し、原曲の持つ未来都市的な世界観を、それぞれダークで華やかなエレクトロニック／ベースミュージックとして再構築した作品。',
+    note: "Released 2021.3.31 / Remixes by WATAPACHI, 食品まつり a.k.a foodman, ATSUKI / Artwork: CHiNPAN",
+    listenLink: "https://linkco.re/7rh0zeF4",
   },
   {
     id: "gu-2018ss-press-exhibition",
