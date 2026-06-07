@@ -48,16 +48,6 @@ export default function Navbar() {
           ))}
         </ul>
 
-        {/* CTA */}
-        <div className="hidden lg:block">
-          <Link
-            href="/contact"
-            className="px-5 py-2 text-xs tracking-[0.2em] uppercase border border-white/20 text-white hover:border-white/50 hover:bg-white/5 transition-all duration-300"
-          >
-            Work With Me
-          </Link>
-        </div>
-
         {/* Mobile hamburger */}
         <button
           className="lg:hidden text-white p-2"
@@ -83,15 +73,6 @@ export default function Navbar() {
                 </Link>
               </li>
             ))}
-            <li className="pt-4 border-t border-white/10">
-              <Link
-                href="/contact"
-                onClick={() => setOpen(false)}
-                className="inline-block px-5 py-2.5 text-xs tracking-[0.2em] uppercase border border-white/20 text-white hover:border-white/50 transition-all"
-              >
-                Work With Me
-              </Link>
-            </li>
           </ul>
         </div>
       )}
