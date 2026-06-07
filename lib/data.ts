@@ -7,6 +7,39 @@ export const navLinks: NavLink[] = [
 ];
 
 export const works: Work[] = [
+  // ── TOP バッター: YENTOWN ──────────────────────────────────────
+  {
+    id: "yentown-yentown",
+    title: "YENTOWN - Y.E.N.T.O.W.N. feat. MonyHorse, JNKMN, PETZ, Awich & kZm",
+    year: 2025,
+    role: "Producer / Composer / Programming (Chaki Zulu & Ryuw)",
+    category: "Artist",
+    style: ["Hip Hop", "Electronic", "Bass"],
+    description:
+      'Co-produced "Y.E.N.T.O.W.N." by YENTOWN featuring MonyHorse, JNKMN, PETZ, Awich and kZm, included on YENTOWN\'s first album "Y.E.N." The track closes the album with a collective anthem that brings together the voices and identity of the crew.',
+    descriptionJa:
+      "YENTOWNの1stアルバム『Y.E.N.』に収録された「Y.E.N.T.O.W.N. feat. MonyHorse, JNKMN, PETZ, Awich & kZm」をChaki Zuluと共同プロデュース。クルーのメンバーが集結し、アルバムを締めくくるアンセム的な楽曲。",
+    note: "Composer / Producer / Programming: Chaki Zulu & Ryuw",
+    listenLink: "https://www.youtube.com/watch?v=-aIv6ixpW54",
+    featured: true,
+  },
+  {
+    id: "yentown-dead-life",
+    title: "YENTOWN - Dead Life feat. kZm & Awich",
+    year: 2025,
+    role: "Producer / Composer / Programming",
+    category: "Artist",
+    style: ["Electronic", "Hip Hop", "Bass"],
+    description:
+      'Produced "Dead Life" by YENTOWN featuring kZm and Awich, included on the album "Y.E.N." Built from gospel-inspired piano ideas into a fast-moving electronic hip-hop track.',
+    descriptionJa:
+      "YENTOWNのアルバム『Y.E.N.』に収録された「Dead Life feat. kZm & Awich」をプロデュース。ゴスペル調のピアノから発展し、疾走感のあるエレクトロニックなヒップホップトラックに仕上げた楽曲。",
+    note: "Composer: kZm, Awich, Ryuw / Producer & Programming: Ryuw",
+    listenLink: "https://genius.com/Yentown-dead-life-lyrics",
+    featured: true,
+  },
+
+  // ── FOODMAN → DREAMS COME TRUE → GLAY → ONE PIECE ─────────────
   {
     id: "foodman-246",
     title: "FOODMAN - 246 feat. Ryuw",
@@ -40,8 +73,7 @@ export const works: Work[] = [
     note: "Produced by YO-SIN × Ryuw / Piano: Miyuki Ito",
     reviewSource: "BARKS",
     reviewLink: "https://barks.jp/news/892815/",
-    listenLink:
-      "https://store.universal-music.co.jp/products/umck1674",
+    listenLink: "https://store.universal-music.co.jp/products/umck1674",
     featured: true,
   },
   {
@@ -72,6 +104,61 @@ export const works: Work[] = [
     listenLink: "https://www.instagram.com/p/B776vQxDwIT/",
     featured: true,
   },
+
+  // ── 年代順 ────────────────────────────────────────────────────
+  {
+    id: "jnkmn-loading",
+    title: "JNKMN - LOADING",
+    year: 2026,
+    role: "Producer / Composer (Ryuw & Teje)",
+    category: "Production",
+    style: ["Hip Hop", "Electronic", "Bass"],
+    description:
+      'Co-produced "LOADING" by JNKMN with Teje, included on JNKMN\'s 2026 album "OD."',
+    descriptionJa:
+      "JNKMNの2026年アルバム『OD』に収録された「LOADING」をTejeと共同プロデュース。",
+    listenLink: "https://www.youtube.com/watch?v=9fRZz3Oa1oY",
+  },
+  {
+    id: "jnkmn-lets-go",
+    title: "JNKMN - LET'S GO feat. Deech & Lunv Loyal",
+    year: 2026,
+    role: "Producer / Composer",
+    category: "Production",
+    style: ["Hip Hop", "Trap", "Bass"],
+    description:
+      'Produced "LET\'S GO" by JNKMN featuring Deech and Lunv Loyal, included on the 2026 album "OD."',
+    descriptionJa:
+      "JNKMNの2026年アルバム『OD』に収録された「LET'S GO feat. Deech & Lunv Loyal」をプロデュース。",
+    listenLink: "https://www.youtube.com/watch?v=76zj4k2OqG0",
+  },
+  {
+    id: "sunny-only1-how-you-doing",
+    title: "SUNNY ONLY 1 - How you doing",
+    year: 2021,
+    role: "Producer / Composer",
+    category: "Production",
+    style: ["R&B", "Electronic", "Bass", "Pop"],
+    description:
+      'Produced "How you doing," the debut single by SUNNY ONLY 1. The track combines bass music and song-oriented production with a positive, danceable energy.',
+    descriptionJa:
+      "SUNNY ONLY 1のデビューシングル「How you doing」をプロデュース。ベースミュージックの流れと歌ものの感覚を融合させた、ポジティブで自然に踊れる楽曲。",
+    note: "2021年4月10日リリース / Composer: SUNNY ONLY 1, Ryuw",
+    listenLink: "https://www.youtube.com/watch?v=a68V0t7ITcE",
+  },
+  {
+    id: "sunny-only1-star-side",
+    title: "SUNNY ONLY 1 - Star side",
+    year: 2021,
+    role: "Producer / Composer",
+    category: "Production",
+    style: ["R&B", "Electronic", "Afrobeat", "Pop"],
+    description:
+      'Produced "Star side" by SUNNY ONLY 1, released via ASOBISYSTEM. The track blends Afrobeat and dancehall-inspired rhythms with acoustic guitar textures and an alternative R&B vocal approach.',
+    descriptionJa:
+      "ASOBISYSTEMよりリリースされたSUNNY ONLY 1の2ndシングル「Star side」をプロデュース。アフロビートやダンスホールのリズム、アコースティックギターの質感、オルタナティブR&B的なボーカルが重なるダンスチューン。",
+    listenLink: "https://spincoaster.com/news/sunny-only1-release-new-single-star-side",
+  },
   {
     id: "gu-2018ss-press-exhibition",
     title: "GU - 2018 Spring/Summer Collection Press Exhibition",
@@ -97,7 +184,6 @@ export const works: Work[] = [
     descriptionJa:
       "ZEEBRA主宰レーベルGRAND MASTERより、Ryutaro Ishikawa名義で「YOUNG GUNZ feat. T-PABLOW × Ryutaro Ishikawa」をプロデュース。",
     listenLink: "https://www.youtube.com/watch?v=AkRuKD6rTmg",
-    featured: true,
   },
   {
     id: "show-gun-dear-santa",
