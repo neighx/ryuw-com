@@ -11,24 +11,6 @@ const genres = [
   "Sound Design",
 ];
 
-const credits = [
-  {
-    title: 'FOODMAN x Ryuw "246"',
-    label: "Released via Mad Decent",
-  },
-  {
-    title: "Ryuw — Flower feat. Ume",
-    label: "Single",
-  },
-  {
-    title: "Wuloong Studio Tokyo",
-    label: "Recording / Production Studio",
-  },
-  {
-    title: "Production / Vocal Mix / Sound Direction",
-    label: "For artists, brands, and visual projects",
-  },
-];
 
 const links = [
   { label: "Spotify", href: "https://open.spotify.com/intl-ja/artist/08lMI3IEUcqQ8sbuaReqKc" },
@@ -115,22 +97,18 @@ export default function EPKPage() {
             </div>
           </section>
 
-          {/* Credits */}
+          {/* View Music CTA */}
           <section>
             <p className="text-[#a3a3a3] text-[10px] tracking-[0.3em] uppercase mb-6 pb-4 border-b border-white/5">
               Selected Credits
             </p>
-            <div className="space-y-0">
-              {credits.map((c) => (
-                <div
-                  key={c.title}
-                  className="py-5 border-b border-white/5 flex items-start justify-between gap-8"
-                >
-                  <p className="text-[#d6d6d6] text-sm font-medium">{c.title}</p>
-                  <p className="text-[#a3a3a3] text-xs shrink-0 text-right">{c.label}</p>
-                </div>
-              ))}
-            </div>
+            <Link
+              href="/music"
+              className="group inline-flex items-center gap-3 px-6 py-3.5 bg-white text-black text-xs tracking-[0.2em] uppercase hover:bg-white/90 transition-all duration-300 font-medium"
+            >
+              View Music
+              <ArrowRight size={12} className="group-hover:translate-x-1 transition-transform" />
+            </Link>
           </section>
         </div>
 
