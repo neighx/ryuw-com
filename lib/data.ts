@@ -174,6 +174,19 @@ export const works: Work[] = [
     listenLink: "https://linkco.re/T6Ut86GG",
   },
   {
+    id: "wnba-phx-halftime",
+    title: "WNBA PHX in Arizona - Halftime Show Dance Music Mix",
+    year: 2025,
+    role: "Sound Director / Music Mix",
+    category: "Dance",
+    style: ["Dance", "Hip Hop", "Electronic", "Bass"],
+    description:
+      "Provided a dance music mix for a WNBA halftime show performance in Phoenix, Arizona.",
+    descriptionJa:
+      "アメリカ・アリゾナ州フェニックスで行われたWNBAハーフタイムショーのダンスパフォーマンス用音源MIXを提供。",
+    listenLink: "https://www.instagram.com/reel/DObD5n0k8E9/",
+  },
+  {
     id: "septeni-raptures-own",
     title: "SEPTENI RAPTURES & Ryuw - Own",
     year: 2024,
