@@ -21,6 +21,7 @@ export const works: Work[] = [
       'Ryuwによるシングル「Flower feat. Ume」。英語と日本語が溶け合うリリック、R&Bを軸にしたメロディ、エレクトロニックな質感を組み合わせた楽曲。夜明けの美しさと日本のストリートカルチャーへの愛を重ね、静かな高揚感と希望を描いている。',
     note: "Lyrics: Ume / Producer & Recording & Mastering Engineer: Ryuw / Vocal: Ume",
     listenLink: "https://linkco.re/q4Rt1Cd9?lang=ja",
+    featured: true,
   },
 
   // ── TOP バッター: YENTOWN ──────────────────────────────────────
