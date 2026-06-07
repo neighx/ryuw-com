@@ -200,6 +200,20 @@ export const works: Work[] = [
     listenLink: "https://www.instagram.com/reel/DObD5n0k8E9/",
   },
   {
+    id: "rakuten-fw-marronnier-2026ss",
+    title: "Rakuten Fashion Week TOKYO - MARRONNIER COLLEGE OF FASHION DESIGN 2026 S/S Collection",
+    year: 2025,
+    role: "Composer / Sound Director",
+    category: "Brand / Film",
+    style: ["Electronic", "Bass", "Runway", "Fashion"],
+    description:
+      "Provided runway music for MARRONNIER COLLEGE OF FASHION DESIGN's 2026 S/S Collection, presented as an Incubation Show at Rakuten Fashion Week TOKYO. The music was created to support the show's \"Fusion\" theme, blending electronic textures, bass-driven sound design and a fashion-forward atmosphere for the runway.",
+    descriptionJa:
+      "Rakuten Fashion Week TOKYOにて開催された、MARRONNIER COLLEGE OF FASHION DESIGN 2026 S/S Collectionのランウェイ楽曲を提供。ショーのテーマである「Fusion」を支えるため、エレクトロニックな質感、ベースミュージックの重心、ファッションショーに合う洗練された空気感を組み合わせて制作。",
+    note: "Rakuten Fashion Week TOKYO 2026 S/S Incubation Show / 2025.9.4 渋谷ヒカリエ ヒカリエホールB",
+    listenLink: "https://www.youtube.com/watch?v=_FbADORxCm8",
+  },
+  {
     id: "septeni-raptures-own",
     title: "SEPTENI RAPTURES & Ryuw - Own",
     year: 2024,
