@@ -12,6 +12,7 @@ const categories: WorkCategory[] = [
   "Artist",
   "Production",
   "Remix",
+  "Dance",
   "Brand / Film",
   "Game / Anime",
 ];

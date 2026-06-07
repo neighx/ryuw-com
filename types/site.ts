@@ -4,7 +4,8 @@ export type WorkCategory =
   | "Production"
   | "Remix"
   | "Brand / Film"
-  | "Game / Anime";
+  | "Game / Anime"
+  | "Dance";
 
 export interface Work {
   id: string;

@@ -106,6 +106,20 @@ export const works: Work[] = [
   },
 
   // ── 年代順 ────────────────────────────────────────────────────
+  // ── 年代順 ────────────────────────────────────────────────────
+  {
+    id: "change-raptures-compass",
+    title: "CHANGE RAPTURES - Compass feat. Ryuw",
+    year: 2026,
+    role: "Composer / Sound Director",
+    category: "Dance",
+    style: ["Hip Hop", "Electronic", "Bass", "Dance Performance"],
+    description:
+      'Composed and programmed "Compass feat. Ryuw" for CHANGE RAPTURES, a professional dance team competing in D.LEAGUE. The track was created for a high-impact dance performance, combining hip-hop energy, electronic textures and bass-driven sound design.',
+    descriptionJa:
+      "プロダンスリーグD.LEAGUEに参戦するCHANGE RAPTURESへ「Compass feat. Ryuw」を提供。ヒップホップのエネルギー、エレクトロニックな質感、ベースミュージック由来のサウンドデザインを融合させた、ダンスパフォーマンスのための楽曲。",
+    listenLink: "https://www.youtube.com/watch?v=hwJU03dVHgI",
+  },
   {
     id: "jnkmn-loading",
     title: "JNKMN - LOADING",
@@ -131,6 +145,46 @@ export const works: Work[] = [
     descriptionJa:
       "JNKMNの2026年アルバム『OD』に収録された「LET'S GO feat. Deech & Lunv Loyal」をプロデュース。",
     listenLink: "https://www.youtube.com/watch?v=76zj4k2OqG0",
+  },
+  {
+    id: "septeni-raptures-stm",
+    title: "SEPTENI RAPTURES & Ryuw - S.T.M",
+    year: 2025,
+    role: "Composer / Sound Director",
+    category: "Dance",
+    style: ["Hip Hop", "Electronic", "Bass", "Dance Performance"],
+    description:
+      'Created "S.T.M" for SEPTENI RAPTURES, performed in D.LEAGUE 24-25. The track is designed for a dynamic dance performance, blending hip-hop attitude, electronic production and bass-heavy sound design.',
+    descriptionJa:
+      "D.LEAGUE 24-25シーズン / ROUND.11で披露されたSEPTENI RAPTURESの「S.T.M」を制作。ヒップホップのアティチュード、エレクトロニックな質感、重心の低いベースサウンドを融合させた、ダンスパフォーマンス向けの楽曲。",
+    note: "D.LEAGUE 24-25 SEASON - TEAM SELECTION / ROUND.11",
+    listenLink: "https://linkco.re/pB8Q8qhy",
+  },
+  {
+    id: "septeni-raptures-sensen",
+    title: "SEPTENI RAPTURES & Ryuw - 宣誓",
+    year: 2025,
+    role: "Composer / Sound Director",
+    category: "Dance",
+    style: ["Hip Hop", "Electronic", "Bass", "Dance Performance"],
+    description:
+      'Created "宣誓" for SEPTENI RAPTURES, a professional dance team in D.LEAGUE. The track features a strong performance-oriented structure, combining vocal elements, hip-hop rhythm and electronic production for the stage.',
+    descriptionJa:
+      "D.LEAGUEのプロダンスチームSEPTENI RAPTURESへ「宣誓」を提供。ボーカル要素、ヒップホップのリズム、エレクトロニックなプロダクションを組み合わせ、ステージパフォーマンス向けに制作された楽曲。",
+    listenLink: "https://linkco.re/T6Ut86GG",
+  },
+  {
+    id: "septeni-raptures-own",
+    title: "SEPTENI RAPTURES & Ryuw - Own",
+    year: 2024,
+    role: "Composer / Sound Design",
+    category: "Dance",
+    style: ["Hip Hop", "Electronic", "Bass", "Dance Performance"],
+    description:
+      'Composed and sound-designed "Own" for SEPTENI RAPTURES, a professional dance team in D.LEAGUE. The track was created to support the team\'s performance with a powerful, bass-driven and rhythmic sound.',
+    descriptionJa:
+      "D.LEAGUEのプロダンスチームSEPTENI RAPTURESへ「Own」を提供。チームのパフォーマンスを支えるため、ベース感のある力強いサウンドとリズムを軸に制作された楽曲。",
+    listenLink: "https://linkco.re/mB3qnXeD?lang=ja",
   },
   {
     id: "sunny-only1-how-you-doing",
