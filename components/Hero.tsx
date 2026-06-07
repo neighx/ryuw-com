@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Play, ArrowRight } from "lucide-react";
+import { Play } from "lucide-react";
 
 const ease = "easeOut" as const;
 
@@ -125,39 +125,19 @@ export default function Hero() {
           </FadeUp>
 
           <FadeUp delay={0.5}>
-            <p className="text-[#d6d6d6] text-xs lg:text-sm tracking-[0.2em] uppercase mb-4">
-              Tokyo-based Producer / Artist / Sound Director
+            <p className="text-[#d6d6d6] text-xs lg:text-sm tracking-[0.2em] uppercase mb-12">
+              Tokyo-based Music Producer / Artist DJ
             </p>
           </FadeUp>
 
-          <FadeUp delay={0.65}>
-            <p className="text-[#a3a3a3] text-sm lg:text-base leading-relaxed mb-12 max-w-sm">
-              Dark, emotional, and futuristic sound for artists, brands, film,
-              and nightlife.
-            </p>
-          </FadeUp>
-
-          <FadeUp delay={0.8}>
-            <div className="flex flex-wrap items-center gap-4">
-              <Link
-                href="/contact"
-                className="group flex items-center gap-3 px-6 py-3 bg-white text-black text-xs tracking-[0.2em] uppercase hover:bg-white/90 transition-all duration-300"
-              >
-                Work With Me
-                <ArrowRight
-                  size={12}
-                  className="group-hover:translate-x-1 transition-transform"
-                />
-              </Link>
-
-              <Link
-                href="/music"
-                className="flex items-center gap-2 px-6 py-3 border border-white/20 text-white text-xs tracking-[0.2em] uppercase hover:border-white/50 hover:bg-white/5 transition-all duration-300"
-              >
-                <Play size={10} className="fill-white" />
-                View Music
-              </Link>
-            </div>
+          <FadeUp delay={0.7}>
+            <Link
+              href="/music"
+              className="inline-flex items-center gap-3 px-8 py-4 bg-white text-black text-xs tracking-[0.2em] uppercase hover:bg-white/90 transition-all duration-300 font-medium"
+            >
+              <Play size={10} className="fill-black" />
+              View Music
+            </Link>
           </FadeUp>
         </div>
       </div>
