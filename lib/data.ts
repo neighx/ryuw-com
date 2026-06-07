@@ -42,7 +42,7 @@ export const works: Work[] = [
   // ── FOODMAN → DREAMS COME TRUE → GLAY → ONE PIECE ─────────────
   {
     id: "foodman-246",
-    title: "FOODMAN - 246 feat. Ryuw",
+    title: "Diplo's MAD DECENT / FOODMAN - 246 feat. Ryuw",
     year: 2019,
     role: "Producer / Artist / Composer",
     category: "Artist",
