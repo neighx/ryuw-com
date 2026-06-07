@@ -32,7 +32,7 @@ export default function EPKPage() {
             Ryuw
           </h1>
           <p className="text-[#a3a3a3] text-sm lg:text-base tracking-[0.15em] uppercase">
-            Tokyo-based Producer / Artist / Sound Director
+            Tokyo-based Music Producer / Artist DJ
           </p>
         </div>
 
