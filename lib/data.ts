@@ -1,7 +1,7 @@
 import type { Work, NavLink } from "@/types/site";
 
 export const navLinks: NavLink[] = [
-  { label: "Music", href: "/work" },
+  { label: "Music", href: "/music" },
   { label: "Bio / EPK", href: "/epk" },
   { label: "Contact", href: "/contact" },
 ];

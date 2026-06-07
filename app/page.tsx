@@ -19,7 +19,7 @@ export default function Home() {
             subtitle="A selection of music, production, and sound direction works."
           />
           <Link
-            href="/work"
+            href="/music"
             className="group inline-flex items-center gap-2 text-[#a3a3a3] hover:text-white text-xs tracking-[0.2em] uppercase transition-colors shrink-0"
           >
             All Music
