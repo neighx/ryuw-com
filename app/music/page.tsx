@@ -2,6 +2,7 @@ import SectionTitle from "@/components/SectionTitle";
 import MusicClient from "@/components/MusicClient";
 import { works } from "@/lib/data";
 
+export const dynamic = "force-static";
 export const revalidate = 86400;
 
 export default function MusicPage() {

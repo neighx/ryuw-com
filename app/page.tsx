@@ -5,6 +5,7 @@ import SectionTitle from "@/components/SectionTitle";
 import WorkCard from "@/components/WorkCard";
 import { featuredWorks } from "@/lib/data";
 
+export const dynamic = "force-static";
 export const revalidate = 86400;
 
 export default function Home() {
