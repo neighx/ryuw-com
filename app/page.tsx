@@ -5,6 +5,8 @@ import SectionTitle from "@/components/SectionTitle";
 import WorkCard from "@/components/WorkCard";
 import { featuredWorks } from "@/lib/data";
 
+export const revalidate = 86400;
+
 export default function Home() {
   return (
     <>
