@@ -22,6 +22,10 @@ const notoSerifJP = Noto_Serif_JP({
 });
 
 export const metadata: Metadata = {
+  icons: {
+    icon: "/icon.png",
+    apple: "/icon.png",
+  },
   title: "Ryuw | Tokyo-based Producer / Artist / Sound Director",
   description:
     "Official website of Ryuw, a Tokyo-based producer, artist, and sound director creating dark, emotional, and futuristic music for artists, brands, film, and nightlife.",
