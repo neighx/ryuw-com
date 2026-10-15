@@ -58,6 +58,23 @@ export const works: Work[] = [
     featured: true,
   },
 
+  // ── JNKMN - OD (COMPLEX JAPAN の下) ────────────────────────────
+  {
+    id: "jnkmn-od-chouji",
+    title: "JNKMN - OD feat. CHOUJI (Prod. Ryuw)",
+    year: 2026,
+    date: "2026.05.18",
+    role: "Producer",
+    category: "Production",
+    style: ["Hip Hop"],
+    description:
+      'Produced "OD" by JNKMN featuring CHOUJI. The music video was released on the YENTOWN YouTube channel.',
+    descriptionJa:
+      "JNKMNの「OD feat. CHOUJI」をプロデュース。ミュージックビデオはYENTOWNのYouTubeチャンネルで公開。",
+    listenLink: "https://www.youtube.com/watch?v=dPsU4bLAOYY",
+    featured: true,
+  },
+
   // ── Artist: Flower が先頭 ──────────────────────────────────────
   {
     id: "ryuw-flower-ume",
