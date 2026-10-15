@@ -53,6 +53,11 @@ body::before {
   opacity: 0.35;
 }
 
+/* No grain over the admin screen */
+body:has([data-studio])::before {
+  display: none;
+}
+
 /* Scrollbar */
 ::-webkit-scrollbar {
   width: 4px;

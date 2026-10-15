@@ -3,12 +3,14 @@ import { ArrowRight } from "lucide-react";
 import Hero from "@/components/Hero";
 import SectionTitle from "@/components/SectionTitle";
 import WorkCard from "@/components/WorkCard";
-import { featuredWorks } from "@/lib/data";
+import { getFeaturedWorks } from "@/lib/works";
 
 export const dynamic = "force-static";
-export const revalidate = 86400;
+export const revalidate = 3600;
 
-export default function Home() {
+export default async function Home() {
+  const featuredWorks = await getFeaturedWorks();
+
   return (
     <>
       {/* Hero */}

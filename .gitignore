@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+# Backups written by scripts/migrate-to-sanity.mjs (kept out of git)
+/backups/*
+!/backups/local-works-before-cms.json

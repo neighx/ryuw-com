@@ -5,23 +5,17 @@ import WorkCard from "@/components/WorkCard";
 import { cn } from "@/lib/utils";
 import type { Work, WorkCategory } from "@/types/site";
 
-const categories: WorkCategory[] = [
-  "All",
-  "Artist",
-  "Production",
-  "Remix",
-  "Dance",
-  "Brand / Film",
-  "Game / Anime",
-];
 
 const INITIAL_LIMIT = 12;
 
 interface MusicClientProps {
   works: Work[];
+  /** Filter labels (without "All"), in display order. */
+  categories: WorkCategory[];
 }
 
-export default function MusicClient({ works }: MusicClientProps) {
+export default function MusicClient({ works, categories: workCategories }: MusicClientProps) {
+  const categories = ["All", ...workCategories];
   const [active, setActive] = useState<WorkCategory>("All");
   const [showAll, setShowAll] = useState(false);
 

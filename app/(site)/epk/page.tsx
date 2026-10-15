@@ -1,6 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, ExternalLink } from "lucide-react";
+import { getEpkWorks } from "@/lib/works";
+
+export const revalidate = 3600;
 
 const genres = [
   "Hip Hop",
@@ -19,7 +22,9 @@ const links = [
   { label: "SoundCloud", href: "https://soundcloud.com/ryuw_prpr" },
 ];
 
-export default function EPKPage() {
+export default async function EPKPage() {
+  const credits = await getEpkWorks();
+
   return (
     <div className="min-h-screen pt-32 pb-28 lg:pt-40 lg:pb-40 px-6 lg:px-8 max-w-6xl mx-auto">
       {/* Header */}
@@ -102,6 +107,37 @@ export default function EPKPage() {
             <p className="text-[#a3a3a3] text-[10px] tracking-[0.3em] uppercase mb-6 pb-4 border-b border-white/5">
               Selected Credits
             </p>
+            {/* Works flagged "EPK" in the CMS */}
+            {credits.length > 0 && (
+              <ul className="mb-10 divide-y divide-white/5">
+                {credits.map((work) => (
+                  <li key={work.id} className="py-4 flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-6">
+                    <span className="text-[#a3a3a3] text-[10px] tracking-[0.2em] uppercase shrink-0 sm:w-20">
+                      {work.date ?? work.year}
+                    </span>
+                    <div className="flex-1 min-w-0">
+                      <p className="text-[#d6d6d6] text-sm leading-snug">
+                        {work.artist && !work.title.toLowerCase().startsWith(work.artist.toLowerCase())
+                          ? `${work.artist} - ${work.title}`
+                          : work.title}
+                      </p>
+                      {work.role && <p className="mt-1 text-[#a3a3a3]/70 text-xs">{work.role}</p>}
+                    </div>
+                    {work.listenLink && (
+                      <a
+                        href={work.listenLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`${work.title} — ${work.linkLabel ?? "Listen"}`}
+                        className="text-[#a3a3a3] hover:text-white transition-colors shrink-0"
+                      >
+                        <ExternalLink size={12} />
+                      </a>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            )}
             <Link
               href="/music"
               className="group inline-flex items-center gap-3 px-6 py-3.5 bg-white text-black text-xs tracking-[0.2em] uppercase hover:bg-white/90 transition-all duration-300 font-medium"
