@@ -1,12 +1,25 @@
 "use client";
 
-import { useEffect, useRef } from "react";
-import Image from "next/image";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Play } from "lucide-react";
 
 const ease = "easeOut" as const;
+
+const VIDEO_SRC = "/Ryuw_Silver_Shimmer_3s.mp4";
+const POSTER_SRC = "/Ryuw_Silver_Shimmer_Poster.jpg";
+
+// Feather the video edges into the background so the square frame is invisible.
+// Kept narrow (4%) so the tip of the logo near the top edge is never dimmed.
+const edgeMask: React.CSSProperties = {
+  maskImage:
+    "linear-gradient(to right, transparent, #000 4%, #000 96%, transparent), linear-gradient(to bottom, transparent, #000 4%, #000 96%, transparent)",
+  maskComposite: "intersect",
+  WebkitMaskImage:
+    "linear-gradient(to right, transparent, #000 4%, #000 96%, transparent), linear-gradient(to bottom, transparent, #000 4%, #000 96%, transparent)",
+  WebkitMaskComposite: "source-in",
+};
 
 function FadeUp({
   delay,
@@ -20,7 +33,7 @@ function FadeUp({
   return (
     <motion.div
       className={className}
-      initial={{ opacity: 0, y: 24 }}
+      initial={{ opacity: 0, y: 12 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.9, delay, ease }}
     >
@@ -30,130 +43,72 @@ function FadeUp({
 }
 
 export default function Hero() {
-  const canvasRef = useRef<HTMLCanvasElement>(null);
+  // Show the still poster instead of the video for reduced-motion users
+  // or when the video can't be played.
+  const [useStill, setUseStill] = useState(false);
 
   useEffect(() => {
-    const canvas = canvasRef.current;
-    if (!canvas) return;
-    const ctx = canvas.getContext("2d");
-    if (!ctx) return;
-
-    let animFrame: number;
-    let t = 0;
-
-    const resize = () => {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-    };
-    resize();
-    window.addEventListener("resize", resize);
-
-    const draw = () => {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      t += 0.004;
-
-      const orbs = [
-        { x: 0.2, y: 0.5, r: 0.5, color: "rgba(109,40,217,0.10)" },
-        { x: 0.8, y: 0.4, r: 0.4, color: "rgba(30,64,175,0.08)" },
-        { x: 0.5, y: 0.8, r: 0.35, color: "rgba(80,0,0,0.07)" },
-      ];
-
-      orbs.forEach((orb, i) => {
-        const ox = orb.x + Math.sin(t + i * 1.2) * 0.06;
-        const oy = orb.y + Math.cos(t + i * 0.9) * 0.05;
-        const gx = ox * canvas.width;
-        const gy = oy * canvas.height;
-        const gr = orb.r * Math.min(canvas.width, canvas.height);
-        const g = ctx.createRadialGradient(gx, gy, 0, gx, gy, gr);
-        g.addColorStop(0, orb.color);
-        g.addColorStop(1, "transparent");
-        ctx.fillStyle = g;
-        ctx.fillRect(0, 0, canvas.width, canvas.height);
-      });
-
-      animFrame = requestAnimationFrame(draw);
-    };
-    draw();
-
-    return () => {
-      cancelAnimationFrame(animFrame);
-      window.removeEventListener("resize", resize);
-    };
+    const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const update = () => setUseStill((prev) => prev || mq.matches);
+    update();
+    mq.addEventListener("change", update);
+    return () => mq.removeEventListener("change", update);
   }, []);
 
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-[#050505]">
-      {/* Gradient canvas */}
-      <canvas ref={canvasRef} className="absolute inset-0 w-full h-full" />
+    <section className="relative min-h-svh flex flex-col items-center justify-center overflow-hidden bg-gradient-to-b from-[#07080c] from-70% to-[#050505] px-4 pt-20 pb-16 lg:pt-24">
+      <h1 className="sr-only">Ryuw</h1>
 
-      {/* Photo — right side (mobile: top-right corner, desktop: right half) */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1.4, delay: 0.2, ease }}
-        className="absolute right-0 top-0 h-full w-[50%] lg:w-[48%] pointer-events-none"
+      {/* Logo — square, always fully visible */}
+      <div
+        className="relative aspect-square w-[min(92vw,calc(100svh-15rem),52rem)] bg-contain bg-center bg-no-repeat"
+        style={{ ...edgeMask, backgroundImage: `url(${POSTER_SRC})` }}
       >
-        <Image
-          src="/ryuw-photo.jpg"
-          alt="Ryuw"
-          fill
-          priority
-          className="object-cover object-center"
-          sizes="(max-width: 1024px) 50vw, 48vw"
-        />
-        {/* Fade: left edge into background */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#050505] via-[#050505]/50 to-transparent" />
-        {/* Fade: bottom — stronger on mobile */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/30 to-transparent" />
-        {/* Fade: top */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#050505]/60 via-transparent to-transparent" />
-      </motion.div>
-
-      {/* Content — left side, anchored to bottom-left on mobile */}
-      <div className="relative z-10 w-full px-6 lg:px-16 xl:px-24 max-w-7xl mx-auto flex items-end lg:items-center pb-24 lg:pb-0 min-h-screen">
-        <div className="max-w-[52%] lg:max-w-xl">
-          <FadeUp delay={0.1}>
-            <p className="text-[#a3a3a3] text-[10px] lg:text-xs tracking-[0.4em] uppercase mb-6 lg:mb-8">
-              Official Site
-            </p>
-          </FadeUp>
-
-          <FadeUp delay={0.3}>
-            <h1 className="text-[clamp(3rem,10vw,10rem)] font-bold leading-none tracking-[-0.02em] text-white mb-4 lg:mb-6">
-              Ryuw
-            </h1>
-          </FadeUp>
-
-          <FadeUp delay={0.5}>
-            <p className="text-[#d6d6d6] text-[10px] lg:text-sm tracking-[0.15em] lg:tracking-[0.2em] uppercase mb-8 lg:mb-12">
-              Tokyo-based Music Producer / Artist DJ
-            </p>
-          </FadeUp>
-
-          <FadeUp delay={0.7}>
-            <Link
-              href="/music"
-              className="inline-flex items-center gap-3 px-6 lg:px-8 py-3 lg:py-4 bg-white text-black text-xs tracking-[0.2em] uppercase hover:bg-white/90 transition-all duration-300 font-medium"
-            >
-              <Play size={10} className="fill-black" />
-              View Music
-            </Link>
-          </FadeUp>
-        </div>
+        {useStill ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            src={POSTER_SRC}
+            alt=""
+            width={960}
+            height={960}
+            className="w-full h-full object-contain"
+          />
+        ) : (
+          <video
+            src={VIDEO_SRC}
+            poster={POSTER_SRC}
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="auto"
+            disablePictureInPicture
+            aria-hidden="true"
+            tabIndex={-1}
+            onError={() => setUseStill(true)}
+            className="w-full h-full object-contain pointer-events-none motion-reduce:hidden"
+          />
+        )}
       </div>
 
-      {/* Scroll indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.6, duration: 1 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
-      >
-        <div className="w-px h-12 bg-gradient-to-b from-transparent to-white/20" />
-        <p className="text-[#a3a3a3]/50 text-[9px] tracking-[0.3em] uppercase">
-          Scroll
-        </p>
-      </motion.div>
+      {/* Tagline + CTA — understated, below the logo */}
+      <div className="relative z-10 flex flex-col items-center text-center mt-2 lg:mt-4">
+        <FadeUp delay={0.4}>
+          <p className="text-[#a3a3a3] text-[10px] lg:text-xs tracking-[0.25em] lg:tracking-[0.3em] uppercase mb-6 lg:mb-8">
+            Tokyo-based Music Producer / Artist DJ
+          </p>
+        </FadeUp>
+
+        <FadeUp delay={0.6}>
+          <Link
+            href="/music"
+            className="inline-flex items-center gap-3 px-6 lg:px-7 py-3 border border-white/20 text-white text-[10px] lg:text-xs tracking-[0.25em] uppercase hover:bg-white hover:text-black transition-all duration-300"
+          >
+            <Play size={9} className="fill-current" />
+            View Music
+          </Link>
+        </FadeUp>
+      </div>
     </section>
   );
 }
