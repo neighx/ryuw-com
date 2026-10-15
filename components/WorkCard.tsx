@@ -76,13 +76,13 @@ export default function WorkCard({ work }: WorkCardProps) {
         </div>
 
         {/* Description */}
-        <p className="mt-4 text-[#a3a3a3] text-sm leading-relaxed">
+        <p className="mt-4 text-[#a3a3a3] text-sm leading-relaxed whitespace-pre-line">
           {work.description}
         </p>
 
         {/* Japanese description */}
         {work.descriptionJa && (
-          <p className="mt-2 text-[#a3a3a3]/70 text-xs leading-relaxed">
+          <p className="mt-2 text-[#a3a3a3]/70 text-xs leading-relaxed whitespace-pre-line">
             {work.descriptionJa}
           </p>
         )}

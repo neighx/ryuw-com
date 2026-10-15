@@ -10,16 +10,17 @@ export const works: Work[] = [
   // ── 最新: COMPLEX JAPAN Launch Party ──────────────────────────
   {
     id: "complex-japan-launch-party",
-    title: "COMPLEXCON JAPAN Launch Party - Venue Music Selection",
+    title: "COMPLEX JAPAN Launch Party - Venue Music Selection",
     year: 2026,
     date: "2026.07.28",
     role: "Venue Music Selection",
     category: "Brand / Film",
     style: ["All Genres"],
     description:
-      "Curated the venue music for the COMPLEX JAPAN Launch Party, held at THE HALL / THE TUNNEL in Jingumae, Tokyo. An all-genre selection set the mood of the night from start to finish.",
+      'Handled the venue music selection for the COMPLEX JAPAN Launch Party, held on July 28, 2026 at THE TUNNEL / THE HALL in Harajuku.\n\nAs a tribute to Hiroshi Fujiwara, Artistic Director of ComplexCon 2026, and to Playboi Carti, the night opened with Hiroshi Fujiwara\'s "Natural Born Dub."\n\nAlongside Playboi Carti\'s own music, the selection wove in tracks by NIGO, 2hollis, Young Coco and MNNK Bro. (Takashi Murakami & JP THE WAVY), artists leading new scenes, to build a space where music and fashion, generations and cultures intersect.',
     descriptionJa:
-      "東京・神宮前のTHE HALL / THE TUNNELで開催されたCOMPLEX JAPANのローンチパーティで、会場の選曲を担当。ジャンルを問わない選曲で、一夜の空気感を演出した。",
+      "2026年7月28日、原宿のTHE TUNNEL / THE HALLにて開催されたCOMPLEX JAPANのローンチパーティで、会場の音楽選曲を担当しました。\n\nComplexCon 2026のアーティスティック・ディレクターを務める藤原ヒロシ氏とPlayboi Cartiへの敬意を込め、オープニングには藤原ヒロシ氏の「Natural Born Dub」を選曲。\n\nまたPlayboi Carti氏の楽曲はもちろん、NIGO氏の楽曲をはじめ、2hollis、Young Coco、MNNK Bro. (Takashi Murakami & JP THE WAVY)の楽曲など、新たなシーンを牽引するアーティストの楽曲を織り交ぜ、音楽とファッション、世代やカルチャーが交差する空間を意識したセレクションを構成しました。",
+    note: "Music Selection by Ryuw",
     listenLink: "https://www.instagram.com/p/Dbfdq7rk6Vv/",
     linkLabel: "View Photos",
     image: {
