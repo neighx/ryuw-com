@@ -10,14 +10,20 @@ const ease = "easeOut" as const;
 const VIDEO_SRC = "/Ryuw_Silver_Shimmer_3s.mp4";
 const POSTER_SRC = "/Ryuw_Silver_Shimmer_Poster.jpg";
 
-// Feather the video edges into the background so the square frame is invisible.
-// Kept narrow (4%) so the tip of the logo near the top edge is never dimmed.
+// Fade the video's empty margins into the page background so the square frame
+// (and the brighter glow in its top-right corner) never shows as an edge.
+// The logo sits roughly within 13–87% horizontally, 6–90% vertically (only the very tip touches the top fade), and along
+// the bottom-left → top-right diagonal, so these stops leave it untouched.
+const MASK_LAYERS = [
+  "linear-gradient(to right, transparent, #000 11%, #000 89%, transparent)",
+  "linear-gradient(to bottom, transparent, #000 8%, #000 91%, transparent)",
+  "linear-gradient(135deg, transparent 14%, #000 32%, #000 68%, transparent 86%)",
+].join(", ");
+
 const edgeMask: React.CSSProperties = {
-  maskImage:
-    "linear-gradient(to right, transparent, #000 4%, #000 96%, transparent), linear-gradient(to bottom, transparent, #000 4%, #000 96%, transparent)",
+  maskImage: MASK_LAYERS,
   maskComposite: "intersect",
-  WebkitMaskImage:
-    "linear-gradient(to right, transparent, #000 4%, #000 96%, transparent), linear-gradient(to bottom, transparent, #000 4%, #000 96%, transparent)",
+  WebkitMaskImage: MASK_LAYERS,
   WebkitMaskComposite: "source-in",
 };
 
@@ -56,12 +62,13 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative min-h-svh flex flex-col items-center justify-center overflow-hidden bg-gradient-to-b from-[#07080c] from-70% to-[#050505] px-4 pt-20 pb-16 lg:pt-24">
+    <section className="relative lg:min-h-svh flex flex-col items-center justify-center overflow-hidden bg-gradient-to-b from-[#07080c] from-70% to-[#050505] px-4 pt-16 pb-14 lg:pt-20 lg:pb-16">
       <h1 className="sr-only">Ryuw</h1>
 
-      {/* Logo — square, always fully visible */}
+      {/* Logo — square video wider than the viewport on mobile; only its empty
+          margins overflow, so the logo itself always stays fully visible. */}
       <div
-        className="relative aspect-square w-[min(92vw,calc(100svh-15rem),52rem)] bg-contain bg-center bg-no-repeat"
+        className="relative shrink-0 aspect-square bg-contain bg-center bg-no-repeat [--logo-w:min(124vw,calc(100svh-7rem))] lg:[--logo-w:min(84vw,calc(100svh-6rem),62rem)] w-[var(--logo-w)] -mt-[calc(var(--logo-w)*0.02)] -mb-[calc(var(--logo-w)*0.09)]"
         style={{ ...edgeMask, backgroundImage: `url(${POSTER_SRC})` }}
       >
         {useStill ? (
@@ -92,7 +99,7 @@ export default function Hero() {
       </div>
 
       {/* Tagline + CTA — understated, below the logo */}
-      <div className="relative z-10 flex flex-col items-center text-center mt-2 lg:mt-4">
+      <div className="relative z-10 flex flex-col items-center text-center">
         <FadeUp delay={0.4}>
           <p className="text-[#a3a3a3] text-[10px] lg:text-xs tracking-[0.25em] lg:tracking-[0.3em] uppercase mb-6 lg:mb-8">
             Tokyo-based Music Producer / Artist DJ

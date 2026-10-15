@@ -7,6 +7,30 @@ export const navLinks: NavLink[] = [
 ];
 
 export const works: Work[] = [
+  // ── 最新: COMPLEX JAPAN Launch Party ──────────────────────────
+  {
+    id: "complex-japan-launch-party",
+    title: "COMPLEXCON JAPAN Launch Party - Venue Music Selection",
+    year: 2026,
+    date: "2026.07.28",
+    role: "Venue Music Selection",
+    category: "Brand / Film",
+    style: ["All Genres"],
+    description:
+      "Curated the venue music for the COMPLEX JAPAN Launch Party, held at THE HALL / THE TUNNEL in Jingumae, Tokyo. An all-genre selection set the mood of the night from start to finish.",
+    descriptionJa:
+      "東京・神宮前のTHE HALL / THE TUNNELで開催されたCOMPLEX JAPANのローンチパーティで、会場の選曲を担当。ジャンルを問わない選曲で、一夜の空気感を演出した。",
+    listenLink: "https://www.instagram.com/p/Dbfdq7rk6Vv/",
+    linkLabel: "View Photos",
+    image: {
+      src: "/works/complex-japan-launch-party.jpg",
+      width: 941,
+      height: 1672,
+      alt: "COMPLEX JAPAN Launch Party flyer — July 28, THE HALL / THE TUNNEL, Jingumae, Tokyo",
+    },
+    featured: true,
+  },
+
   // ── Artist: Flower が先頭 ──────────────────────────────────────
   {
     id: "ryuw-flower-ume",

@@ -21,6 +21,12 @@ export interface Work {
   reviewSource?: string;
   reviewLink?: string;
   listenLink?: string;
+  /** Label for listenLink when it isn't audio (e.g. "View Photos"). Defaults to "Listen". */
+  linkLabel?: string;
+  /** Exact date shown instead of the year, e.g. "2026.07.28". */
+  date?: string;
+  /** Flyer / artwork. Cards with an image span the full grid width. */
+  image?: { src: string; width: number; height: number; alt: string };
   featured?: boolean;
 }
 
