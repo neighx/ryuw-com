@@ -7,7 +7,33 @@ export const navLinks: NavLink[] = [
 ];
 
 export const works: Work[] = [
-  // ── 最新: COMPLEX JAPAN Launch Party ──────────────────────────
+  // ── 最新: LIMI feu × HIROTTON ─────────────────────────────────
+  {
+    id: "limi-feu-hirotton-brand-movie",
+    title: "LIMI feu × HIROTTON - Brand Movie Music",
+    year: 2026,
+    date: "2026.10.10",
+    role: "Music Production / Composer",
+    category: "Brand / Film",
+    style: ["All Genres"],
+    description:
+      "Produced the music for the brand movie of the LIMI feu × HIROTTON collaboration collection with graphic artist HIROTTON, released at LIMI feu Aoyama and THE SHOP YOHJI YAMAMOTO.",
+    descriptionJa:
+      "LIMI feuとグラフィックアーティストHIROTTONによるコラボレーションコレクションのブランドムービー楽曲を制作。LIMI feu青山店、THE SHOP YOHJI YAMAMOTOにて発売。",
+    note: "Creative Direction: @johnnyhiramoto / Film: @koto_mov",
+    listenLink:
+      "https://www.yohjiyamamoto.co.jp/news/detail/limi-feu-x-hirotton-collaboration-collection/",
+    linkLabel: "View Collection",
+    image: {
+      src: "/works/limi-feu-hirotton.jpg",
+      width: 1596,
+      height: 2000,
+      alt: "LIMI feu × HIROTTON collaboration artwork — a tabby cat on a skull surrounded by burning roses",
+    },
+    featured: true,
+  },
+
+  // ── COMPLEX JAPAN Launch Party ────────────────────────────────
   {
     id: "complex-japan-launch-party",
     title: "COMPLEX JAPAN Launch Party - Venue Music Selection",
