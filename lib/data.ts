@@ -68,9 +68,9 @@ export const works: Work[] = [
     category: "Production",
     style: ["Hip Hop"],
     description:
-      'Produced "OD" by JNKMN featuring CHOUJI, the title track of JNKMN\'s 2026 album "OD." The music video was released on the YENTOWN YouTube channel.',
+      'Produced "OD" by JNKMN featuring CHOUJI, the title track of JNKMN\'s 2026 album "OD." The music video was released on the YENTOWN YouTube channel.\n\nThe album "OD" reached No. 1 on the iTunes Store Hip-Hop/Rap Top Albums chart (Japan) and No. 43 on the overall Top Albums chart (Japan) on May 22, 2026.',
     descriptionJa:
-      "JNKMNの2026年アルバム『OD』のタイトル曲「OD feat. CHOUJI」をプロデュース。ミュージックビデオはYENTOWNのYouTubeチャンネルで公開。",
+      "JNKMNの2026年アルバム『OD』のタイトル曲「OD feat. CHOUJI」をプロデュース。ミュージックビデオはYENTOWNのYouTubeチャンネルで公開。\n\nアルバム『OD』は、2026年5月22日のiTunes Store ヒップホップ/ラップ トップアルバム（日本）で1位、総合トップアルバム（日本）で43位を獲得。",
     listenLink: "https://www.youtube.com/watch?v=dPsU4bLAOYY",
     featured: true,
   },
